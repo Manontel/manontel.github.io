@@ -1,8 +1,5 @@
 <header class="site-header">
-  <div class="shell masthead{% if page.section == 'home' %} masthead-home{% endif %}">
-    {% unless page.section == 'home' %}
-      <a class="signature" href="{{ home.url | relative_url }}">{{ t.name }}</a>
-    {% endunless %}
+  <div class="shell masthead">
     <nav class="menu" aria-label="{{ t.navigation }}">
       {% for item in t.nav %}
         {% assign target = site.pages | where: 'section', item[0] | where: 'lang', page.lang | first %}

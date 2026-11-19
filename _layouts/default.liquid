@@ -1,5 +1,4 @@
 {% assign t = site.data.site_text[page.lang] %}
-{% assign home = site.pages | where: 'section', 'home' | where: 'lang', page.lang | first %}
 {% assign siblings = site.pages | where: 'section', page.section %}
 <!doctype html>
 <html lang="{% if page.lang == 'zh' %}zh-CN{% else %}en{% endif %}">

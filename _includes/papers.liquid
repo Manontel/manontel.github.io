@@ -2,9 +2,9 @@
 <div class="publications">
   <section id="journal"><h2>{{ t.published }}</h2>
     {% bibliography --query @article %}
-    <p class="equal-note"><sup>*</sup> {{ t.equal }}</p>
   </section>
   <section id="preprints"><h2>{{ t.preprints }}</h2>
     {% bibliography --query @unpublished %}
   </section>
+  <p class="equal-note"><sup>*</sup> {{ t.equal }}</p>
 </div>

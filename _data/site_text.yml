@@ -15,7 +15,7 @@ en:
   computational: Scientific computing
   published: Journal articles
   preprints: Preprints
-  equal: The first three authors contributed equally.
+  equal: Authors marked with an asterisk contributed equally.
   see_paper: Read paper
   see_preprint: Read preprint
 zh:
@@ -35,6 +35,6 @@ zh:
   computational: 科学计算
   published: 期刊论文
   preprints: 预印本
-  equal: 前三位作者贡献相同。
+  equal: 标有星号的作者贡献相同。
   see_paper: 阅读论文
   see_preprint: 阅读预印本

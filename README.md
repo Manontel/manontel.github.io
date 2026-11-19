@@ -13,6 +13,7 @@
 ## 内容维护
 
 - `_bibliography/papers.bib` 是中英文论文页的共同来源。期刊论文使用 `@article`，预印本使用 `@unpublished`。首页图文主项标为 `selected = {lead}`，下方文字条目标为 `selected = {true}`。对应的图源、图注与双语研究介绍放在 `_data/research.yml` 中，以 BibTeX 键关联。
+- 有共同一作时，在对应的 BibTeX 条目中填写人数，例如 `equal_contributors = {2}` 会在前两位作者姓名后加星号。中英文论文页沿用同一组标记。
 - `_data/site_text.yml` 保存个人简介与导航文字，`_data/methods.yml` 保存计算工作，`_data/talks.yml` 保存报告。根目录的 `CV.pdf` 直接作为简历下载。
 - `_layouts/` 与 `_includes/` 保存页面模板，`assets/css/site.css` 定义版式和颜色。图片与字体位于 `assets/`，页面可以离线显示。
 

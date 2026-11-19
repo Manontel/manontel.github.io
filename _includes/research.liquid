@@ -1,0 +1,12 @@
+{% assign t = site.data.site_text[page.lang] %}
+<div class="research-list">
+  {% for work in site.data.research %}{% assign item = work[page.lang] %}
+    <section class="research-item" id="{{ work.id }}">
+      <div><p class="category">{{ item.field }}</p><h2>{{ item.title }}</h2><p>{{ item.detail }}</p><a class="text-link" href="{{ work.paper }}">{{ t.see_preprint }}</a></div>
+      <figure><img width="640" height="225" src="{{ '/assets/img/' | append: work.image | append: '.webp' | relative_url }}" alt="{{ item.alt }}"><figcaption>{{ item.caption }}</figcaption></figure>
+    </section>
+  {% endfor %}
+</div>
+<section class="methods"><h2>{{ t.computational }}</h2>
+  <div>{% for method in site.data.methods[page.lang] %}<article><h3>{{ method.title }}</h3><p>{{ method.text }}</p>{% if method.paper %}<a class="text-link" href="{{ method.paper }}">{{ t.see_paper }}</a>{% endif %}</article>{% endfor %}</div>
+</section>

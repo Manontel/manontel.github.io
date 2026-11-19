@@ -1,0 +1,16 @@
+- date: "2026-08"
+  paper: https://arxiv.org/abs/2604.00204
+  en: {date: Aug 2026, type: Poster, city: Beijing, title: No-Go Theorem for Singularity Resolution, venue: "International Congress of Basic Science, BIMSA"}
+  zh: {date: 2026 年 8 月, type: 海报, city: 北京, title: 奇点消解的禁戒定理, venue: 国际基础科学大会，北京雁栖湖应用数学研究院}
+- date: "2026-04"
+  paper: https://arxiv.org/abs/2604.00204
+  en: {date: Apr 2026, type: Oral talk, city: Haikou, title: No-Go Theorem for Singularity Resolution, venue: "Annual Meeting of the Gravitation and Relativistic Astrophysics Division, Chinese Physical Society"}
+  zh: {date: 2026 年 4 月, type: 口头报告, city: 海口, title: 奇点消解的禁戒定理, venue: 中国物理学会引力与相对论天体物理分会年会}
+- date: "2026-01"
+  paper: https://arxiv.org/abs/2604.00204
+  en: {date: Jan 2026, type: Oral talk, city: Shanghai, title: No-Go Theorem for Singularity Resolution, venue: "Tianwen National Academic Forum for Outstanding Undergraduates in Physics and Astronomy, Tsung-Dao Lee Institute"}
+  zh: {date: 2026 年 1 月, type: 口头报告, city: 上海, title: 奇点消解的禁戒定理, venue: 李政道研究所 · 天问全国优秀物理与天文本科生学术论坛}
+- date: "2025-04"
+  paper: https://doi.org/10.1088/1361-6382/ae1e55
+  en: {date: Apr 2025, type: Oral talk, city: Kunming, title: Comparison of Quasinormal Modes of Black Holes in f(T) and f(Q) Gravity, venue: "Annual Meeting of the Gravitation and Relativistic Astrophysics Division, Chinese Physical Society"}
+  zh: {date: 2025 年 4 月, type: 口头报告, city: 昆明, title: f(T) 与 f(Q) 引力中的黑洞准正规模比较, venue: 中国物理学会引力与相对论天体物理分会年会}

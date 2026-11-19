@@ -1,0 +1,18 @@
+en:
+  - title: Quasinormal modes in modified gravity
+    text: I computed scalar and electromagnetic perturbations of black holes in f(Q) gravity using sixth-order WKB, time-domain evolution, and Prony analysis, and compared their spectra with those in other gravity theories.
+    paper: https://doi.org/10.1088/1361-6382/ae1e55
+  - title: Time-domain evolution on GPUs
+    text: I developed a C++ time-domain evolution code with a CUDA core and used it to generate ringdown signals for two collaborative studies of regular black holes.
+    paper: https://doi.org/10.1088/1361-6382/ae5d7d
+  - title: General-relativistic radiative transfer
+    text: During my visit to the Mullard Space Science Laboratory at UCL, I implemented and validated a radiative-transfer code in Fortran under the supervision of Kinwah Wu and Ziri Younsi.
+zh:
+  - title: 修正引力中的准正规模
+    text: 我用六阶 WKB 近似、时域演化和 Prony 分析计算了 f(Q) 引力中黑洞的标量与电磁微扰，并与其他引力理论下的黑洞谱进行比较。
+    paper: https://doi.org/10.1088/1361-6382/ae1e55
+  - title: GPU 加速的时域演化
+    text: 我用 C++ 编写了时域演化程序，用 CUDA 加速核心计算，并用它为两项关于正则黑洞的合作研究计算振铃信号。
+    paper: https://doi.org/10.1088/1361-6382/ae5d7d
+  - title: 广义相对论辐射转移
+    text: 在伦敦大学学院穆拉德空间科学实验室访问期间，我在 Kinwah Wu 和 Ziri Younsi 的指导下，用 Fortran 独立实现并验证了广义相对论辐射转移程序。

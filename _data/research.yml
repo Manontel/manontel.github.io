@@ -1,0 +1,71 @@
+- id: exceptional-points
+  key: zhang2026points
+  image: ringdown
+  paper: https://arxiv.org/abs/2610.01416
+  figure:
+    path: /assets/img/ep-s10b.svg
+    source: https://arxiv.org/pdf/2610.01416v1#page=27
+  en:
+    field: Ringdown spectroscopy
+    title: Exceptional points in black-hole ringdowns
+    home_title: Can a black-hole ringdown reveal an exceptional point?
+    figure_zoom: Enlarge Fig. S10(b)
+    figure_alt: Two branches in the complex frequency plane. Arrows trace each mode from its marked starting frequency to the starting frequency of the other.
+    figure_caption: Follow either mode from its open circle along the arrows. When the black-hole parameters return to their starting values after one turn around the exceptional point, the mode reaches the other circle. The dashed curve shows the same exchange for a parameter loop a tenth as large.
+    figure_reference: Zhang, Lan & Wang (2026), Fig. S10(b)
+    brief: When can a finite ringdown signal distinguish an exceptional point from two closely spaced modes?
+    detail: At an exceptional point, two modes coalesce and a term proportional to time multiplies the usual damped oscillation. We combine evidence for this term with a test of zero frequency splitting and an upper bound on the splitting. Simulated signals show how an omitted response can mimic an exceptional point.
+    alt: Schematic of two nearby damped oscillations.
+    caption: Two damped modes with slightly different frequencies, shown schematically.
+  zh:
+    field: 振铃谱学
+    title: 黑洞振铃中的例外点
+    home_title: 能从黑洞振铃中辨认出例外点吗？
+    figure_zoom: 放大查看图 S10(b)
+    figure_alt: 复频率平面上的两条谱支。沿箭头追踪，每个模式都从标出的起点走到另一个模式的起始频率。
+    figure_caption: 从任一空心圆出发，沿箭头追踪这个模。黑洞参数绕例外点一周回到原值时，它的频率落在另一个空心圆上。虚线对应的参数回路缩小到原来的十分之一，两个模依然互换。
+    figure_reference: Zhang, Lan & Wang（2026），图 S10(b)
+    brief: 从有限时长的振铃信号中，怎样区分例外点与两个频率相近的模？
+    detail: 在例外点，两个模式并合，振铃响应中会出现一个正比于时间与阻尼振荡之积的项。我们将这一项的证据、频率劈裂与零的相容性以及劈裂上界结合起来。模拟信号还展示了拟合时遗漏的响应如何造成例外点的假象。
+    alt: 两个相近阻尼振荡的示意图。
+    caption: 频率相近的两个阻尼振荡模式示意。
+- id: darboux
+  key: zhang2026darboux
+  image: potentials
+  paper: https://arxiv.org/abs/2609.07323
+  en:
+    field: Black-hole perturbations
+    title: Darboux constraints on isospectrality
+    summary: If the same localized bump is added to the axial and polar potentials, preserving their Darboux relation requires the bump to have an <i>r</i><sup>−2</sup> tail.
+    brief: Which deformations of the axial and polar potentials preserve their Darboux relation?
+    detail: We classify pairs of potential deformations that admit a regular, local, first-order, frequency-independent Darboux transformation. If the same nonzero bump is added to both potentials and vanishes at both ends, it must have an inverse-square tail. This rules out Gaussian and Pöschl–Teller bumps in that class.
+    alt: Schematic of two effective potential barriers in a radial coordinate.
+    caption: Schwarzschild quadrupole perturbations. The solid and dashed lines show the axial and polar potentials.
+  zh:
+    field: 黑洞微扰
+    title: 等谱性的 Darboux 约束
+    summary: 给轴向势和极向势加上同一个局域扰动时，要保持两势间的 Darboux 关系，这个扰动就必须有 <i>r</i><sup>−2</sup> 尾部。
+    brief: 对轴向和极向有效势分别施加怎样的形变，才能保持两者之间的 Darboux 关系？
+    detail: 我们给出了势形变对的完整分类，要求形变后的两势之间仍存在正则、局域、不依赖频率的一阶 Darboux 变换。如果对两势施加同一个在两端趋于零的非零扰动，它必须具有平方反比的渐近尾部。这一条件排除了高斯型和 Pöschl–Teller 型扰动。
+    alt: 两个有效势垒随径向坐标变化的示意图。
+    caption: Schwarzschild 黑洞的四极微扰。实线为轴向势，虚线为极向势。
+- id: singularities
+  key: zhang2026nogo
+  image: collapse
+  paper: https://arxiv.org/abs/2604.00204
+  en:
+    field: Modified gravity
+    title: A no-go theorem for singularity resolution
+    summary: A search for regular black holes led us to prove that, in a class of homogeneous collapse models, a strictly positive effective energy density alone cannot prevent a singularity.
+    brief: Can a strictly positive effective energy density prevent a collapsing universe from reaching a singularity?
+    detail: We study homogeneous, isotropic, spatially flat collapse with minimally coupled matter. In a vacuum-normalized analytic theory of gravity, a strictly positive effective energy density alone cannot resolve the singularity. The question grew out of an attempt to construct regular black holes in f(Q) gravity.
+    alt: Schematic of the contracting spatial sections of a homogeneous collapse.
+    caption: A comoving spherical shell contracting in a homogeneous spacetime, shown schematically.
+  zh:
+    field: 修正引力
+    title: 奇点消解的禁戒定理
+    summary: 从构造正则黑洞时遇到的困难出发，我们证明了在一类均匀坍缩模型中，单凭严格为正的有效能量密度不足以阻止奇点形成。
+    brief: 严格为正的有效能量密度，能否使坍缩的宇宙避开奇点？
+    detail: 我们考察物质最小耦合、均匀各向同性且空间平坦的坍缩。在满足真空归一化条件的解析引力理论中，严格为正的有效能量密度本身不足以消解奇点。这个问题源于我们在 f(Q) 引力中构造正则黑洞的一次尝试。
+    alt: 均匀坍缩过程中空间截面收缩的示意图。
+    caption: 均匀时空中共动球壳收缩的示意图。

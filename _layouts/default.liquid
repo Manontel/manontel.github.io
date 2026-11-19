@@ -1,0 +1,32 @@
+{% assign t = site.data.site_text[page.lang] %}
+{% assign home = site.pages | where: 'section', 'home' | where: 'lang', page.lang | first %}
+{% assign siblings = site.pages | where: 'section', page.section %}
+<!doctype html>
+<html lang="{% if page.lang == 'zh' %}zh-CN{% else %}en{% endif %}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <title>{% unless page.section == 'home' %}{{ page.title | escape }} · {% endunless %}{{ t.name }} · {{ t.field }}</title>
+  <meta name="description" content="{{ page.description | default: t.bio | escape }}">
+  <link rel="icon" href="{{ '/assets/img/mark.png' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+  {% for sibling in siblings %}<link rel="alternate" hreflang="{% if sibling.lang == 'zh' %}zh-CN{% else %}en{% endif %}" href="{{ sibling.url | relative_url }}">{% endfor %}
+</head>
+<body>
+  <a class="skip" href="#main">{{ t.skip }}</a>
+  {% include header.liquid %}
+  <main id="main" tabindex="-1">{{ content }}</main>
+  {% unless page.section == 'home' %}{% include footer.liquid %}{% endunless %}
+  <script>
+    if (location.hash) {
+      const alternate = document.querySelector('.language a');
+      if (alternate) alternate.hash = location.hash;
+    }
+    window.addEventListener('hashchange', () => {
+      const alternate = document.querySelector('.language a');
+      if (alternate) alternate.hash = location.hash;
+    });
+  </script>
+</body>
+</html>

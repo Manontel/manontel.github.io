@@ -1,0 +1,27 @@
+---
+---
+{% assign work = site.data.research | where: 'key', entry.key | first %}
+{% assign copy = work[page.lang] %}
+{% assign research = site.pages | where: 'section', 'research' | where: 'lang', page.lang | first %}
+{% if entry.selected == 'lead' and work.figure %}
+  <article class="research-feature" id="{{ work.id }}">
+    <h2><a href="{{ research.url | relative_url }}#{{ work.id }}">{{ copy.home_title }}</a></h2>
+    <figure>
+      <a class="figure-link" href="{{ work.figure.path | relative_url }}" aria-label="{{ copy.figure_zoom }}">
+        <img src="{{ work.figure.path | relative_url }}" width="470" height="370" alt="{{ copy.figure_alt }}" fetchpriority="high">
+      </a>
+      <figcaption>
+        {{ copy.figure_caption }}
+        <cite><a href="{{ work.figure.source }}">{{ copy.figure_reference }}</a></cite>
+      </figcaption>
+    </figure>
+  </article>
+{% elsif work %}
+  <article class="research-row" id="{{ work.id }}">
+    <h3><a href="{{ research.url | relative_url }}#{{ work.id }}">{{ copy.title }}</a></h3>
+    <p>{{ copy.summary | default: copy.brief }}</p>
+  </article>
+{% else %}
+  {% assign papers = site.pages | where: 'section', 'publications' | where: 'lang', page.lang | first %}
+  <article class="research-row"><h3><a href="{{ papers.url | relative_url }}#{{ entry.key }}">{{ entry.title }}</a></h3></article>
+{% endif %}

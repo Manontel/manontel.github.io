@@ -1,0 +1,40 @@
+en:
+  name: Zhen-Xiao Zhang
+  nav: {home: Home, research: Research, publications: Publications, talks: Talks}
+  skip: Skip to content
+  navigation: Main navigation
+  language: Language
+  field: Theoretical physics
+  affiliation: School of Physics, Nankai University
+  bio: I’m an undergraduate in the Poling Class. I study black-hole perturbations and ringdown spectroscopy with Yan-Gang Miao and Chen Lan. I also work on singularity resolution in modified gravity.
+  visit: In 2025 I visited the Mullard Space Science Laboratory at University College London, where I wrote a Fortran code for general-relativistic radiative transfer.
+  cv: CV
+  email: Email
+  selected: Other research
+  recent_talks: Recent talks and posters
+  computational: Scientific computing
+  published: Journal articles
+  preprints: Preprints
+  equal: The first three authors contributed equally.
+  see_paper: Read paper
+  see_preprint: Read preprint
+zh:
+  name: 张振霄
+  nav: {home: 首页, research: 研究, publications: 论文, talks: 学术报告}
+  skip: 跳至正文
+  navigation: 主导航
+  language: 语言
+  field: 理论物理
+  affiliation: 南开大学物理科学学院
+  bio: 我在物理伯苓班读本科，跟随缪炎刚教授和兰晨博士研究黑洞微扰与振铃谱学。我也关心修正引力在什么条件下能消解奇点。
+  visit: 2025 年，我在伦敦大学学院穆拉德空间科学实验室访问期间，用 Fortran 写了一个广义相对论辐射转移程序。
+  cv: 简历
+  email: 邮箱
+  selected: 其他研究
+  recent_talks: 近期报告与海报
+  computational: 科学计算
+  published: 期刊论文
+  preprints: 预印本
+  equal: 前三位作者贡献相同。
+  see_paper: 阅读论文
+  see_preprint: 阅读预印本

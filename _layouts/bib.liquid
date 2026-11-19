@@ -1,0 +1,18 @@
+---
+---
+{% if entry.doi %}{% assign target = 'https://doi.org/' | append: entry.doi %}{% else %}{% assign target = 'https://arxiv.org/abs/' | append: entry.arxiv %}{% endif %}
+<article class="paper" id="{{ entry.key }}">
+  <div class="paper-year">{{ entry.year }}</div>
+  <div>
+    <h3 lang="en"><a href="{{ target }}">{{ entry.title }}</a></h3>
+    <p class="authors">
+      {%- assign equal_count = entry.equal_contributors | default: 0 | plus: 0 -%}
+      {%- for author in entry.author_array -%}
+        {%- unless forloop.first -%}, {% endunless -%}
+        {%- if site.scholar.last_name contains author.last and site.scholar.first_name contains author.first -%}<strong>{{ author.first }} {{ author.last }}</strong>{%- else -%}{{ author.first }} {{ author.last }}{%- endif -%}
+        {%- if forloop.index <= equal_count -%}<sup>*</sup>{%- endif -%}
+      {%- endfor -%}
+    </p>
+    <p class="citation">{% if entry.doi %}<i>{{ entry.journal }}</i> <b>{{ entry.volume }}</b>, {{ entry.pages }} · <a href="{{ target }}">DOI</a>{% else %}<a href="{{ target }}">arXiv:{{ entry.arxiv }}</a>{% endif %}</p>
+  </div>
+</article>

@@ -1,0 +1,46 @@
+---
+layout: default
+---
+{% assign t = site.data.site_text[page.lang] %}
+{% assign research = site.pages | where: 'section', 'research' | where: 'lang', page.lang | first %}
+{% assign talks = site.pages | where: 'section', 'talks' | where: 'lang', page.lang | first %}
+<div class="shell home-content">
+  <div class="home-intro">
+    <div class="profile-intro">
+      <h1>{{ t.name }}</h1>
+      <p class="affiliation">{{ t.affiliation }}</p>
+      <p class="profile-bio">{{ t.bio }}</p>
+      <p class="profile-bio">{{ t.visit }}</p>
+      <ul class="contact">
+        <li><a href="{{ '/CV.pdf' | relative_url }}">{{ t.cv }}</a></li>
+        <li><a href="{{ site.inspire }}">INSPIRE</a></li>
+        <li><a href="{{ site.orcid }}">ORCID</a></li>
+        <li><a href="mailto:{{ site.email }}">{{ t.email }}</a></li>
+      </ul>
+    </div>
+    <div class="lead-work">
+      {% bibliography --group_by none --template featured --query @*[selected=lead]* %}
+    </div>
+  </div>
+  <section class="works">
+    <div class="section-head"><h2><a href="{{ research.url | relative_url }}">{{ t.selected }}</a></h2></div>
+    {% include selected_papers.liquid %}
+  </section>
+  <section class="recent-presentations">
+    <div class="section-head"><h2><a href="{{ talks.url | relative_url }}">{{ t.recent_talks }}</a></h2></div>
+    {% assign topics = site.data.talks | slice: 0, 2 | group_by: 'paper' %}
+    {% for topic in topics %}
+      {% assign first_talk = topic.items | first %}
+      <h3><a href="{{ first_talk.paper }}">{{ first_talk[page.lang].title }}</a></h3>
+      <ul class="short-talks">
+        {% for talk in topic.items %}
+          {% assign item = talk[page.lang] %}
+          <li>
+            <time datetime="{{ talk.date }}">{{ item.date }}</time>
+            <span><a href="{{ talks.url | relative_url }}#talk-{{ talk.date }}">{{ item.venue }}</a> · {{ item.city }} · {{ item.type }}</span>
+          </li>
+        {% endfor %}
+      </ul>
+    {% endfor %}
+  </section>
+</div>

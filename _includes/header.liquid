@@ -1,0 +1,20 @@
+<header class="site-header">
+  <div class="shell masthead{% if page.section == 'home' %} masthead-home{% endif %}">
+    {% unless page.section == 'home' %}
+      <a class="signature" href="{{ home.url | relative_url }}">{{ t.name }}</a>
+    {% endunless %}
+    <nav class="menu" aria-label="{{ t.navigation }}">
+      {% for item in t.nav %}
+        {% assign target = site.pages | where: 'section', item[0] | where: 'lang', page.lang | first %}
+        <a href="{{ target.url | relative_url }}" {% if item[0] == page.section %}aria-current="page"{% endif %}>{{ item[1] }}</a>
+      {% endfor %}
+    </nav>
+    <nav class="language" aria-label="{{ t.language }}">
+      {% for target in siblings %}
+        {% unless target.lang == page.lang %}
+          {% if target.lang == 'en' %}<a href="{{ target.url | relative_url }}" hreflang="en" lang="en">English</a>{% else %}<a href="{{ target.url | relative_url }}" hreflang="zh-CN" lang="zh-CN">中文</a>{% endif %}
+        {% endunless %}
+      {% endfor %}
+    </nav>
+  </div>
+</header>

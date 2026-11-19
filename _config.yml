@@ -1,0 +1,32 @@
+title: Zhen-Xiao Zhang
+first_name: Zhen-Xiao
+last_name: Zhang
+email: zx.zhang@mail.nankai.edu.cn
+inspire: https://inspirehep.net/authors/3085851
+orcid: https://orcid.org/0009-0009-5219-4373
+url: "https://manontel.github.io"
+baseurl: ""
+lang: en
+languages: [en, zh]
+encoding: utf-8
+include: [_pages]
+exclude:
+  - AGENTS.md
+  - project-context.md
+  - README.md
+  - LICENSE-al-folio
+  - Gemfile
+  - Gemfile.lock
+  - preview.ps1
+  - vendor
+plugins: [jekyll-scholar]
+scholar:
+  source: ./_bibliography
+  bibliography: papers.bib
+  bibliography_template: bib
+  sort_by: year, month
+  order: descending
+  group_by: none
+  first_name: [Zhen-Xiao]
+  last_name: [Zhang]
+  bibliography_list_tag: ul

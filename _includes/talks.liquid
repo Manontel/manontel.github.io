@@ -1,0 +1,9 @@
+{% assign t = site.data.site_text[page.lang] %}
+<div class="talk-list">
+  {% for talk in site.data.talks %}{% assign item = talk[page.lang] %}
+    <article class="talk" id="talk-{{ talk.date }}">
+      <div class="talk-date"><time datetime="{{ talk.date }}">{{ item.date }}</time><span>{{ item.city }}</span></div>
+      <div><p class="category">{{ item.type }}</p><h2>{{ item.title }}</h2><p>{{ item.venue }}</p><a class="text-link" href="{{ talk.paper }}">{{ t.see_paper }}</a></div>
+    </article>
+  {% endfor %}
+</div>

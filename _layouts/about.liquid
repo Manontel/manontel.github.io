@@ -15,8 +15,8 @@ layout: default
         <li><a href="{{ '/CV.pdf' | relative_url }}">{{ t.cv }}</a></li>
         <li><a href="{{ site.inspire }}">INSPIRE</a></li>
         <li><a href="{{ site.orcid }}">ORCID</a></li>
-        <li><a href="mailto:{{ site.email }}">{{ t.email }}</a></li>
       </ul>
+      <p class="contact-email"><a href="mailto:{{ site.email | escape }}">{{ site.email | escape }}</a></p>
     </div>
     <div class="lead-work">
       {% bibliography --group_by none --template featured --query @*[selected=lead]* %}

@@ -85,6 +85,8 @@ h3{font-size:1.85rem;line-height:1.12}
   margin-inline: .65em;
   color: #87938c;
 }
+.contact-email {margin-top: .35rem; color: var(--green); overflow-wrap: anywhere;}
+.contact-email a {user-select: all;}
 .lead-work, .profile-intro {min-width: 0;}
 .research-feature h2 {
   margin: 0 0 .8rem;
